@@ -1,8 +1,15 @@
-var functions = require('firebase-functions');
+import * as functions from "firebase-functions"
+import express from "express"
 
-// // Create and Deploy Your First Cloud Functions
-// // https://firebase.google.com/docs/functions/write-firebase-functions
-//
-// exports.helloWorld = functions.https.onRequest((request, response) => {
-//  response.send("Hello from Firebase!");
-// });
+const app = express()
+
+app.get("/", (req, res) => {
+  res.send("Hello from Express on Firebase!")
+})
+
+export let helloWorld = functions.https.onRequest((req, res) => {
+  if (!req.path) {
+    req.url = `/${req.url}` // prepend to keep query params
+  }
+  return app(req, res)
+})
