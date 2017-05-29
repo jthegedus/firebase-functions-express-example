@@ -10,7 +10,7 @@ Host your Express Server on Cloud Functions enabling a low-cost, auto-scaling we
 Cloud Functions uses [Express request and response objects](https://firebase.google.com/docs/functions/http-events#trigger_a_function_with_an_http_request) allowing us to pass an Express app [directly into the function](https://github.com/jthegedus/firebase-functions-express-example/blob/master/functionsES6/index.js#L12).
 
 File of interest:
-*   functionsES6/[index.js](https://github.com/jthegedus/firebase-functions-express-example/functionsES6/index.js)
+*   functionsES6/[index.js](https://github.com/jthegedus/firebase-functions-express-example/blob/master/functionsES6/index.js)
 
 ## Installation
 ```
