@@ -14,7 +14,7 @@ export let addSlash = functions.https.onRequest(app)
 // no '/' required to call correctly
 export let noSlash = functions.https.onRequest((req, res) => {
   if (!req.path) {
-    req.url = `/${req.url}` // prepend '/' to keep query params
+    req.url = `/${req.url}` // prepend '/' to keep query params if any
   }
   return app(req, res)
 })
