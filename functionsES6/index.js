@@ -16,6 +16,7 @@ app2.use(cors({ origin: true }))
 app2.get("*", (request, response) => {
   response.send("Hello from Express on Firebase with CORS!")
 })
+
 export let api2 = functions.https.onRequest(app2)
 
 /* Express with CORS & automatic trailing '/' solution */
