@@ -13,7 +13,7 @@ File of interest:
 *   functionsES6/[index.js](https://github.com/jthegedus/firebase-functions-express-example/blob/master/functionsES6/index.js)
 
 ## A note on Code Compatibility
-Everything was tested on Ubuntu 16.04 & Windows 10 with [Bash on Ubuntu on Windows](https://msdn.microsoft.com/en-au/commandline/wsl/about). If you wish for Windows native support please [submit an issue](https://github.com/jthegedus/firebase-functions-express-example/issues/new) so we can work on a Windows branch. Please report any macOS errors as I do not have access to a device to test. My development environment can be found here.
+Everything was tested on Ubuntu 16.04 & Windows 10 with [Bash on Ubuntu on Windows](https://msdn.microsoft.com/en-au/commandline/wsl/about). If you wish for Windows native support please [submit an issue](https://github.com/jthegedus/firebase-functions-express-example/issues/new) so we can work on a Windows branch. Please report any macOS errors as I do not have access to a device to test. [My development environment can be found here](https://github.com/jthegedus/dotfiles).
 
 ## Installation
 ```
