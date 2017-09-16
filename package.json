@@ -2,18 +2,24 @@
   "name": "firebase-functions-express-example",
   "version": "1.0.0",
   "description": "Express server running on Cloud Functions for Firebase",
-  "repository": "https://github.com/jthegedus/firebase-functions-express-example.git",
-  "author": "<jthegedus@jttech.io>",
   "license": "MIT",
-  "devDependencies": {
-    "babel-cli": "^6.24.1",
-    "babel-preset-es2015": "^6.24.1",
-    "rimraf": "^2.6.1"
-  },
+  "author": "<jthegedus@jttech.io>",
+  "repository":
+    "https://github.com/jthegedus/firebase-functions-express-example.git",
   "scripts": {
-    "prepackage-functions": "rimraf functions",
-    "package-functions": "babel 'functionsES6' --out-dir 'functions' --presets=es2015 --copy-files --ignore 'node_modules'",
-    "postpackage-functions": "cd functions && yarn",
-    "deploy": "yarn run package-functions && firebase deploy"
+    "precommit": "lint-staged",
+    "deploy": "firebase deploy",
+    "format": "prettier --write \"**/**{.js, .json}\" && sort-package-json",
+    "postinstall": "cd functions && yarn",
+    "serve": "firebase serve --only functions"
+  },
+  "devDependencies": {
+    "husky": "^0.14.3",
+    "lint-staged": "^4.2.1",
+    "prettier": "^1.7.0",
+    "sort-package-json": "^1.7.1"
+  },
+  "lint-staged": {
+    "*.{js,json,css}": ["prettier --write", "git add"]
   }
 }
