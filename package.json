@@ -7,10 +7,10 @@
   "repository":
     "https://github.com/jthegedus/firebase-functions-express-example.git",
   "scripts": {
+    "postinstall": "cd functions && yarn",
     "precommit": "lint-staged",
     "deploy": "firebase deploy",
     "format": "prettier --write \"**/**{.js, .json}\" && sort-package-json",
-    "postinstall": "cd functions && yarn",
     "serve": "firebase serve --only functions"
   },
   "devDependencies": {
