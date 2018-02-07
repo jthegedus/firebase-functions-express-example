@@ -1,3 +1,8 @@
+# THIS REPO HAS BEEN MOVED
+This example has been merged into my [blog-examples](https://github.com/jthegedus/blog-examples) repo. This repo will no longer be updated.
+
+---
+
 # Express Server on Cloud Functions for Firebase
 
 Host an Express Server in Cloud Functions for Firebase.
